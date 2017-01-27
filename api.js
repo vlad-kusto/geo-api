@@ -8,8 +8,7 @@ const request = require('request'),
 	GOOGLE_GEO_URL = 'https://maps.googleapis.com/maps/api/',
 	PARAMS = {
 		ADDRESS: 'address',
-		TIMESTAMP: 'timestamp',
-		DEBUG: 'debug'
+		TIMESTAMP: 'timestamp'
 	},
 	STATUS_CODE = {
 		OK: 200,
