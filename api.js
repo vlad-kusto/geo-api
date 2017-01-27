@@ -26,7 +26,7 @@ const request = require('request'),
  * @param req - request
  * @param res - response
  * @param paramName - queryString parameter
- * @returns string value or false if not exist or empty
+ * @returns string value request parameter
  */
 var existsParameter = function( req, res, paramName ){
 	var value = req.body && req.body[paramName] || req.query[paramName] || req.headers['x-access-' + paramName];
