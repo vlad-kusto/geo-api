@@ -22,7 +22,7 @@ const request = require('request'),
 	router = express.Router();
 
 /**
- * Checking exist or empty queryString parameter.
+ * Checking exist or empty request parameter.
  * @param req - request
  * @param res - response
  * @param paramName - queryString parameter
