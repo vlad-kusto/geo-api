@@ -22,7 +22,7 @@ const request = require('request'),
 	router = express.Router();
 
 /**
- * Checking exist or empty request parameter.
+ * Checking exists or empty request parameter.
  * @param req - request
  * @param res - response
  * @param paramName - queryString parameter
@@ -68,7 +68,7 @@ var callGoogleService = function( url, cb ) {
 };
 
 /**
- * Sent Requests to GeoCode service.
+ * Call Geocodeing Web Service.
  * @param req - request
  * @param res - response
  * @param address of street
@@ -88,7 +88,7 @@ var getGeoCode = function( req, res, address, cb ) {
 };
 
 /**
- * Sent Requests to Timezone service.
+ * Call Timezone Web Service.
  * @param req - request
  * @param res - response
  * @param address - string
@@ -158,4 +158,4 @@ router.route('/timezone').get( function( req, res ){
 
 app.use('/geo-api', router);
 app.listen(PORT);
-console.log('Proxy Google Geo Service running http://localhost:' + PORT);
+console.log('Proxy of Google Geo Services running http://localhost:' + PORT);
